@@ -9,6 +9,7 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// Set the session variable with the input value
 		$_SESSION["userValue"] = $_POST["value"];
+		header("Location: {$_SERVER["REQUEST_URI"]}");
 	}
 ?>
 
